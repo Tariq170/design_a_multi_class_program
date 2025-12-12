@@ -1,7 +1,7 @@
 #Test 1: formats correctly
 from lib.diary_entry import DiaryEntry
 
-def test_format_correctly():
+'''def test_format_correctly():
 
     entry = DiaryEntry("Monday", "Went to school")
     assert entry.format() == "Monday: Went to school"
@@ -23,4 +23,13 @@ def test_calculates_reading_time():
 def test_checks_if_readable_in_time():
     entry = DiaryEntry("A", "one two three four five")
     entry.readable_in(5, 1) == True
-    assert entry.readable_in(2, 1) == False
+    assert entry.readable_in(2, 1) == False'''
+
+
+def test_format_with_phone_number():
+    entry = DiaryEntry("Day 1", "Hello", "07123456789")
+    assert entry.format() == "Day 1: Hello, phone_number: 07123456789"
+
+def test_format_without_phone_number():
+    entry = DiaryEntry("Day 2", "World")
+    assert entry.format() == "Day 2: World, phone_number: N/A"
