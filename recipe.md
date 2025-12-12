@@ -35,7 +35,9 @@ reading_time(wpm)
 readable_in(wpm, minutes)
 # returns True if entry can be read fully within the given minutes
 
-### Class: Diary
+
+
+Class: Diary
 
 Stores multiple DiaryEntry objects.
 
@@ -50,7 +52,9 @@ entries_readable(wpm, minutes)
 # returns a list of entries that can be fully read
 # within the given time and reading speed
 
-### Class: Todo
+
+
+Class: Todo
 
 Represents a single task.
 
@@ -65,7 +69,9 @@ mark_complete()
 is_complete()
 # returns True/False
 
-### Class: TodoList
+
+
+Class: TodoList
 
 Stores many Todo objects.
 
@@ -79,7 +85,10 @@ incomplete()
 complete()
 # returns list of tasks completed
 
-### Class: PhoneNumberExtractor
+
+
+
+Class: PhoneNumberExtractor
 
 Extracts phone numbers from diary entries.
 
