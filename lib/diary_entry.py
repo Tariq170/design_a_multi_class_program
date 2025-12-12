@@ -8,7 +8,7 @@ class DiaryEntry:
         self.phone_number = phone_number
 
     def format(self):
-        return f"{self.title}: {self.contents}, phone_number:{self.phone_number if self.phone_number else "N/A"}"
+        return f"{self.title}: {self.contents}, phone_number:{self.phone_number if self.phone_number else 'N/A'}"
     # returns "title: contents"
 
     def count_words(self):
