@@ -19,5 +19,5 @@ def test_seperates_complete_and_incomplete_tasks():
     tl.add(t1)
     tl.add(t2)
 
-    tl.incomplete() == [t1]
+    assert tl.incomplete() == [t1]
     assert tl.complete() == [t2]

@@ -2,15 +2,13 @@ class Todo:
 
     def __init__(self, task):
         self.task = task
-        self.complete = False
+        self.is_complete = False
     # task: string
     # initially incomplete
 
 
     def mark_complete(self):
-        self.complete = True
+        self.is_complete = True
     # marks the task as complete
 
-    def is_complete(self):
-        return self.complete
-    # returns True/False
+    

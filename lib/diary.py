@@ -6,6 +6,13 @@ class Diary:
         self.entries.append(entry)
     # entry: instance of DiaryEntry
 
+    def all_phone_numbers(self):
+        numbers = []
+        for entry in self.entries:
+            if entry.phone_number:
+                numbers.append(entry.phone_number)
+        return numbers        
+
     def all(self):
         return self.entries
     # returns a list of entries

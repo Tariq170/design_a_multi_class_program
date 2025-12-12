@@ -1,15 +1,15 @@
 class TodoList:
     def __init__(self):
-        self.task = []
+        self.tasks = []
 
     def add(self, todo):
-        self.task.append(todo)
+        self.tasks.append(todo)
     # todo: instance of Todo
 
     def incomplete(self):
-        return [tasks for tasks in self.tasks if not tasks.is_complete()]
+        return [task for task in self.tasks if not task.is_complete]
     # returns list of tasks not completed
 
     def complete(self):
-        return [tasks for tasks in self.tasks if tasks.is_complete()]
+        return [task for task in self.tasks if task.is_complete]
     # returns list of tasks completed    
