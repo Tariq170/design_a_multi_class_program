@@ -26,10 +26,22 @@ def test_checks_if_readable_in_time():
     assert entry.readable_in(2, 1) == False'''
 
 
-def test_format_with_phone_number():
+'''def test_format_with_phone_number():
     entry = DiaryEntry("Day 1", "Hello", "07123456789")
     assert entry.format() == "Day 1: Hello, phone_number: 07123456789"
 
 def test_format_without_phone_number():
     entry = DiaryEntry("Day 2", "World")
-    assert entry.format() == "Day 2: World, phone_number: N/A"
+    assert entry.format() == "Day 2: World, phone_number: N/A"'''
+
+
+def test_format_includes_title_contents_and_phone_number():
+    entry = DiaryEntry("My Day", "I went to school.", "07123456789")
+    assert entry.format() == "My Day: I went to school., phone_number:07123456789"
+
+
+def test_format_shows_NA_when_no_phone_number():
+    entry = DiaryEntry("Shopping", "Bought apples")
+    assert entry.format() == "Shopping: Bought apples, phone_number:N/A"
+
+
