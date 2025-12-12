@@ -7,9 +7,9 @@ class TodoList:
     # todo: instance of Todo
 
     def incomplete(self):
-        return [task for task in self.tasks if not task.is_complete]
+        return [task for task in self.tasks if not task.is_complete()]
     # returns list of tasks not completed
 
     def complete(self):
-        return [task for task in self.tasks if task.is_complete]
+        return [task for task in self.tasks if task.is_complete()]
     # returns list of tasks completed    
